@@ -1,6 +1,6 @@
 --
 
-## 🧩 Bishop Move Visualizer – Problem Brief
+## 🧩 Bishop Move Visualizer 
 
 Build a React component that shows an **8x8 chessboard**. When a user **hovers or clicks** on a square, highlight all the **diagonal cells** a bishop can move to. Clear highlights on mouse leave or new selection.
 
