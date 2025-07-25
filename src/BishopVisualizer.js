@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import "./styles.css";
 
 const boardSize = 8;
-type Position = [number, number] | null;
 
-export default function App() {
-  const [hovered, setHovered] = useState<Position>(null);
+export default function BishopVisualizer() {
+  const [hovered, setHovered] = useState(null);
 
   return (
     <div className="board">
@@ -29,7 +28,9 @@ export default function App() {
               }`}
               onMouseEnter={() => setHovered([row, col])}
               onMouseLeave={() => setHovered(null)}
-            />
+            >
+              {isHovered && <span className="bishop">♝</span>}
+            </div>
           );
         })
       )}
